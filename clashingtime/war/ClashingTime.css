@@ -1,0 +1,230 @@
+/** Add css rules here for your application. */
+
+body, td, div {
+	font-family: 'lucida grande', tahoma, verdana, arial, sans-serif;
+	font-size: small;
+	}
+
+select {
+	width: 100%;
+	}
+
+#welcome {
+	text-align: left;
+	}
+	
+input {
+	width: 99%
+	}
+
+#menu .gwt-MenuItem {
+	color: #FFFFFF;
+	background-color: #3B5998;
+	}
+
+#menu .gwt-MenuItem:hover {
+	text-decoration: underline;
+	background-color: #5B74A8;
+	cursor: pointer;
+	}
+
+.mainTable button {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	box-sizing:
+}
+	
+#bodyAgenda {
+		background: #FFFFFF;
+	}
+
+.outerTable {
+	width: 923px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+.outerTd {
+	width: 923px;
+	background-image: url('pixel_trama.gif');
+	}
+	
+.errorMessage {
+	color: red;
+	font-weight: bold;
+	font-size: x-small;
+	}
+
+.loginTextBox {
+	font-size: small;
+	height: 14px;
+	width:70%;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	color: black;
+	margin-bottom: 1px;
+	}
+	.loginButton {
+/*	height: 18px;*/
+	margin-top: 1px;
+	}
+/*.loginButton {
+	height: 18px;
+	font-size: small;
+	vertical-align: middle;
+	background-color: #3B5998;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+	}*/
+	
+.tabAgenda .gwt-TabPanelBottom {
+	border-color:#3B5998;
+	}
+
+.tabAgenda {
+	margin-top: 10px;
+	width: 100%;
+	}
+	
+.tabBarAgenda .gwt-TabBarItem {
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	margin-left: 10px;
+	background-color:#6B89C8;
+	color: white;
+	font-weight: normal;
+	border-color:#6B89C8;
+	padding: 0px;
+	cursor: pointer;
+}
+
+.tabBarAgenda .gwt-TabBarItem:hover {
+	text-decoration: underline;
+}
+
+.tabBarAgenda .gwt-TabBarItem-selected {
+	background-color:#3B5998;
+	color: white;
+	border-width: 4px;
+	font-weight: bold;
+	border-color: #3B5998;
+	cursor: default;
+}
+.tabBarAgenda .gwt-TabBarItem-selected:hover {
+	text-decoration: none;
+}
+.gridHorario, .gridActividades {
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	border-spacing: 1px;
+	background-color: #CCCCCC;
+/*	vertical-align: middle; */
+}
+
+.ejemploCeldaDisponible, .ejemploCeldaNoDisponible {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	font-weight: bold;
+	}
+	
+.gridActividades td {
+	background-color: #FFFFFF;
+	}
+
+.gridHorario td, .ejemploCeldaDisponible, .ejemploCeldaNoDisponible {
+	width: 102px;
+	height: 32px;
+	text-align: center;
+	}
+	
+.celdaHorario {
+	cursor:pointer;
+	}
+	
+.horarioHeader {
+	font-size:medium;
+	font-weight: bold;
+	text-align: center;
+	background-color: #3B5998;
+	color: white;
+}
+
+.horarioModulo {
+	background-color: #5B74A8;
+	font-size: large;
+	color: white;
+	}
+
+.horarioDisponible, .horarioNoDisponible {
+	font-weight: bold;
+	vertical-align: middle;
+	border-style: none;
+}
+
+.tbHorario {
+	width:100px;
+	}
+	
+.horarioNoDisponible, .ejemploCeldaNoDisponible {
+/*	background-color: #FF5959;*/
+/*	background-color: #FF0000;*/
+	background-image: url('background-nodisponible.png');
+}
+	
+.horarioDisponible,.ejemploCeldaDisponible {
+/*	background-color: #9FDE7A;*/
+	background-color: #FFFFFF;
+	}
+
+.panelEjemplos td {
+	vertical-align: middle;
+	}
+	
+.mainTable {
+	border-collapse:collapse;
+	width: 640px;
+	background-color:#3B5998;
+	}
+
+.mainTable tbody {
+	background-color: white;
+	}
+
+.mainTable table {
+	width: 100%;
+}
+
+.sendButton {
+  display: block;
+  font-size: 16pt;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+  width: 400px;
+}
+
+.dialogVPanel {
+  margin: 5px;
+}
+
+.serverResponseLabelError {
+  color: red;
+}
+
+/** Set ids using widget.getElement().setId("idOfElement") */
+#closeButton {
+  margin: 15px 6px 6px;
+}

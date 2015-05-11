@@ -1,0 +1,117 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the    -->
+<!-- browser's rendering engine into               -->
+<!-- "Standards Mode". Replacing this declaration  -->
+<!-- with a "Quirks Mode" doctype may lead to some -->
+<!-- differences in layout.                        -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Reportes Agenda UAI</title>
+    
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="ClashingTime.css">
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="clashingtime/clashingtime.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body id="bodyAgenda">
+
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+<table id="outerTable" align="center">
+<tr>
+<td class="outerTd">
+    <table align="center" class="mainTable">
+      <tr>
+        <td colspan="2" style="font-weight:bold;" id="header">
+        	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+        		<tr>
+        			<td width="215"><img src="logoUAI.jpg" border="0" width="215" height="47"></td>
+        			<td align="center" height="1">&nbsp;</td>
+        			<td width="215" align="right"><div id="loading">Loading&nbsp;<img src="progress.gif" border="0"></div><div id="login"></div></td>
+        		</tr>
+        	</table>
+        </td>        
+      </tr>
+	<tr>
+      	<td colspan="2"><div id="menu"></div></td>
+    </tr>
+    <tr>
+    	<td colspan="2" align="center">
+        	<div id="main"></div>
+        	<div id="welcome">
+        		<h2>Bienvenido al sistema de horarios UAI</h2>
+        		<ul>
+        		<li>¿Ayudantía extra para la sección 2 de Programación?</li>
+        		<li>¿Evento para todos los alumnos de Ingeniería Comercial de 1er año?</li>
+        		<li>¿Reunión con un grupo de profesores de su Facultad?</li>
+        		</ul>
+        		<h3>Revise rápidamente el horario disponible de profesores y alumnos.</h3>
+        		<img src="Horario.jpg" border="0" width="80%"></br> 
+        		<p><font color="#FF0000"><b>Para comenzar ingrese con su correo UAI en la barra superior.</b></font></p>
+        	</div>
+        	<div id="ayuda">
+        		<h3>Revise rápidamente el horario disponible de profesores y alumnos.</h3>
+        		<img src="Horario.jpg" border="0" width="80%"></br> 
+        		<p>Este calendario le permite ver en qué días y módulos hay horarios disponibles para las personas que usted seleccionó.
+        		La tabla le mostrará en blanco los bloques disponibles y con borde rojo los bloques ocupados, indicando cuántas personas
+        		tienen alguna actividad en ese bloque. Haciendo click en un bloque ocupado podrá revisar las actividades agendadas para esas personas.</p>
+        		<img src="actividades.jpg" border="0">
+        		<h3>Busque alumnos</h3>
+        		<p>Por la asignatura que cursan. Por ejemplo todos los alumnos que están en la sección 2 de Programación.</p>
+        		<img src="buscador-secciones.jpg" border="0">
+        		<p>Por carrera y año de ingreso (cohorte).</p>
+        		<img src="buscador-carreras.jpg" border="0">
+        		<h3>Busque profesores</h3>
+        		<p>Por apellido.</p>
+        		<img src="buscador-profesor.jpg" border="0">
+        		<p>Por facultad.</p>
+        		<img src="buscador-facultad.jpg" border="0">
+        		<p>Por la asignatura que dictan</p>
+        		<img src="buscador-asignaturas.jpg" border="0">
+        		<h3>Combine criterios de búsqueda</h3>
+        		<p>Al buscar alumnos usted puede combinar criterios de búsqueda, por ejemplo todos los alumnos de las sección 2 de Programación y todos los alumnos de Historia ingreso 2010.</p>
+        		<img src="combinar-criterios.jpg" border="0">
+        		<h3>Filtre por tipo de actividad</h3>
+        		<p>Por defecto el sistema busca todas las actividades para los alumnos, pero solamente las cátedras para los profesores. Sin embargo ustede puede modificar este filtro haciendo click en Tipo de actividad.</p>
+        		<h2>¿Sugerencias? ¿Algo falló?</h2>
+        		<p>Por favor de un aviso enviando un correo al <a href="mailto:jorge.villalon@uai.cl">autor</a>.</p>
+        	</div>
+        </td>
+    </tr>
+      <tr>
+        <td colspan="2" id="footer" align="center">Copyright (c) 2010 - Jorge Villalón</td>
+      </tr>
+    </table>
+</td>
+</tr>
+</table>    
+  </body>
+</html>
