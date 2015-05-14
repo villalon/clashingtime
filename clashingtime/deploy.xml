@@ -8,6 +8,5 @@
                 <exclude name="**/lib/*jar"/>
             </fileset>
         </war>
-        <scp file="target/clashingtime.war" todir="deploy:pepito@wiris.uai.cl:/home/deploy/" trust="yes"/>
     </target>
 </project>
