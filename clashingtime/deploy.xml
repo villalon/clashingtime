@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="war" name="Instalar War en servidor">
+    <target name="war">
+        <war destfile="target/clashingtime.war"
+            webxml="war/WEB-INF/web.xml">
+            <fileset dir="war/">
+                <exclude name="**/.svn/*"/>
+                <exclude name="**/lib/*jar"/>
+            </fileset>
+        </war>
+        <scp file="target/clashingtime.war" todir="deploy:pepito@wiris.uai.cl:/home/deploy/" trust="yes"/>
+    </target>
+</project>

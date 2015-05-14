@@ -25,7 +25,7 @@ public class ListBoxPersonas extends AbstractAgendaComposite {
 	}
 	
 	public ListBoxPersonas() {
-		this.listBoxPersonas = new ListBox(true);
+		this.listBoxPersonas = new ListBox();
 		initWidget(listBoxPersonas);
 	}
 	

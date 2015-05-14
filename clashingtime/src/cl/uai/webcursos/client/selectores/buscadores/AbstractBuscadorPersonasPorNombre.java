@@ -80,7 +80,7 @@ public abstract class AbstractBuscadorPersonasPorNombre extends AbstractBuscador
 		vpanel = new VerticalPanel();
 		txtPersonas = new TextBox();
 		btnBuscar = new Button("Buscar alumno");
-		lbProfesores = new ListBox(true);
+		lbProfesores = new ListBox();
 		lbProfesores.setVisibleItemCount(5);
 
 		lblPersonas = new Label("Ingrese las primeras letras del apellido del alumno a buscar.");

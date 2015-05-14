@@ -42,7 +42,7 @@ public class BuscadorAlumnosPorSecciones extends AbstractBuscadorPersonas {
 		suggestBoxAsignaturas = new SuggestBoxAsignaturas();
 
 		lblSecciones = new Label("Secciones");
-		lbSecciones = new ListBox(true);
+		lbSecciones = new ListBox();
 		lbSecciones.setVisibleItemCount(5);
 		lbSecciones.setEnabled(false);
 

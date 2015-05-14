@@ -43,7 +43,7 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 		lblAsignaturas = new Label("Nombre de la asignatura.");
 		suggestOracleAsignaturas = new MultiWordSuggestOracle();
 		suggestBox = new SuggestBox(suggestOracleAsignaturas);
-		suggestBox.getTextBox().setEnabled(false);
+		suggestBox.getValueBox().setEnabled(false);
 
 		listBoxUnidadesAcademicas.getListBox().addChangeHandler(new ChangeHandler() {			
 			@Override
@@ -56,7 +56,7 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 			@Override
 			public void onCallStarted(AsyncCallStartedEvent event) {
 				suggestBox.setText("Loading");
-				suggestBox.getTextBox().setEnabled(false);
+				suggestBox.getValueBox().setEnabled(false);
 				handlerManager.fireEvent(event);
 			}
 
@@ -64,19 +64,19 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 			public void onCallFinished(AsyncCallFinishedEvent event) {
 				if(event.isError()) {
 					suggestBox.setText("Error!");
-					suggestBox.getTextBox().setEnabled(false);
+					suggestBox.getValueBox().setEnabled(false);
 				} else {
 					suggestBox.setText("");
-					suggestBox.getTextBox().setEnabled(true);
+					suggestBox.getValueBox().setEnabled(true);
 				}
 				handlerManager.fireEvent(event);
 			}
 		});
 		
-		suggestBox.getTextBox().addClickHandler(new ClickHandler() {
+		suggestBox.getValueBox().addClickHandler(new ClickHandler() {
 			@Override
 			public void onClick(ClickEvent event) {
-				suggestBox.getTextBox().selectAll();
+				suggestBox.getValueBox().selectAll();
 			}
 		});
 		
@@ -99,8 +99,8 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 		if(listBoxUnidadesAcademicas.getListBox().getSelectedIndex()==0)
 			return;
 		listBoxUnidadesAcademicas.getListBox().setEnabled(false);
-		suggestBox.getTextBox().setEnabled(false);
-		suggestBox.getTextBox().setText("Loading...");
+		suggestBox.getValueBox().setEnabled(false);
+		suggestBox.getValueBox().setText("Loading...");
 		suggestOracleAsignaturas.clear();
 		handlerManager.fireEvent(new AsyncCallStartedEvent());
 		int periodoAcademico = listBoxUnidadesAcademicas.getSelectedValue();
@@ -109,8 +109,8 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 			@Override
 			public void onFailure(Throwable caught) {
 				listBoxUnidadesAcademicas.getListBox().setEnabled(true);
-				suggestBox.getTextBox().setEnabled(false);
-				suggestBox.getTextBox().setText("Error!");
+				suggestBox.getValueBox().setEnabled(false);
+				suggestBox.getValueBox().setText("Error!");
 				suggestBox.setTitle(caught.getMessage());
 				handlerManager.fireEvent(new AsyncCallFinishedEvent(true));
 			}
@@ -121,8 +121,8 @@ public class SuggestBoxAsignaturas extends AbstractAgendaComposite {
 					suggestOracleAsignaturas.add(s[0]);
 				}
 				listBoxUnidadesAcademicas.getListBox().setEnabled(true);
-				suggestBox.getTextBox().setEnabled(true);
-				suggestBox.getTextBox().setText("");
+				suggestBox.getValueBox().setEnabled(true);
+				suggestBox.getValueBox().setText("");
 				handlerManager.fireEvent(new AsyncCallFinishedEvent(false));
 			}
 		});

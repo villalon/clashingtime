@@ -45,7 +45,7 @@ public class BuscadorProfesoresPorFacultad extends AbstractBuscadorPersonas {
 		HorizontalPanel hpanelUA = new HorizontalPanel();
 		hpanelUA.add(lbFacultades);
 		
-		lbProfesores = new ListBox(true);
+		lbProfesores = new ListBox();
 		lbProfesores.setVisibleItemCount(5);
 		btnSeleccionarTodos = new Button("Seleccionar todos");
 		btnSeleccionarTodos.setEnabled(false);

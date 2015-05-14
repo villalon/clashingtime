@@ -51,7 +51,7 @@ public class BuscadorAlumnosPorCarrera extends AbstractBuscadorPersonas {
 		
 		lblCohortes = new Label("Año de ingreso de los alumnos (cohorte)");
 
-		lbCohortes = new ListBox(true);
+		lbCohortes = new ListBox();
 		lbCohortes.setVisibleItemCount(5);
 		lbCohortes.setEnabled(false);
 
